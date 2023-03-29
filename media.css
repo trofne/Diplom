@@ -1,0 +1,35 @@
+@media (min-width: 1201px) {
+    .image-1 {
+    background-image: url(../images/shop-item-desk1.jpg);
+    }
+    .image-2 {
+        background-image: url(../images/shop-item-desk2.jpg);
+    }
+    .image-3 {
+        background-image: url(../images/shop-item-desk3.jpg); 
+    }
+}
+
+@media (min-width: 641px), (max-width: 1200px) {
+    .image-1 {
+        background-image: url(../images/shop-item-tablet1.jpg);
+    }
+    .image-2 {
+        background-image: url(../images/shop-item-tablet2.jpg);
+    }
+    .image-3 {
+        background-image: url(../images/shop-item-tablet3.jpg);
+    }
+}
+
+@media (max-width: 640px) {
+    .image-1 {
+        background-image: url(../images/shop-item-mobile1.jpg);
+    }
+    .image-2 {
+        background-image: url(../images/shop-item-mobile2.jpg);
+    }
+    .image-3 {
+        background-image: url(../images/shop-item-mobile3.jpg);
+    }
+}
