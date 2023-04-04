@@ -9,6 +9,34 @@
     <title>Diploma</title>
 </head>
 <body>
+  <div class="modal" id="modal">
+    <div class="modal-body">
+      <h2 class="hidden">Ваш фидбек</h2>
+      <p class="modal-question"><b>Как часто вы заходите на сайт?</b><br></p>
+      <br>
+      <form class="search">
+        <label class="search-group">
+          <input class="field" name="query" placeholder="Почти каждый день" required>
+        </label>
+      </form>
+      <p class="modal-question"><b>Вы подписаны на e-mail рассылку?</b><br></p>
+        <label class="custom-radio">
+          <input type="radio" name="color" value="Да">
+          <span>Да</span>
+         
+        </label>
+        <label class="modal-radio">
+          <input type="radio" name="color" value="Нет">
+          <span>Нет</span>
+        </label>
+        <p class="modal-question"><b>Расскажите, какой контент вы хотели бы видеть на нашем сайте?</b><br></p>
+          <form action="handler">
+            <p class="modal-question"><textarea name="comment"></textarea></p>
+            <p class="modal-question"><input type="submit"></p>
+          </form>
+      
+    </div>
+  </div>
         
   <header class="header">
     <div class="header-menu">
@@ -26,7 +54,12 @@
       </nav>
     </div>
     <h1>Блог о творчестве, спорте<br> и образе жизни</h1>
+
+    
+    
   </header>
+  
+  
 <section class="now-trends">
   <h2 class="hidden">сейчас в тренде</h2>
   <article class="picture-trends">
@@ -37,8 +70,8 @@
       <div class="trend-content">
         <div class="trend-frame">
           <ul class="main-post-item">
-            <li><a href="#" class="main-menu-link">LIFESTYLE</a></li>
-            <li><a href="#" class="main-menu-link">INTERIOR</a></li>
+            <li><a href="#" class="main-menu-link"><b>LIFESTYLE</b></a></li>
+            <li><a href="#" class="main-menu-link"><strong>INTERIOR</strong></a></li>
           </ul>
           <div class="trend-content-link">
             <a href="#" class="trend-content-link">Сейчас в тренде: сад<br> на подоконнике</a>
@@ -53,7 +86,7 @@
       <div class="trend-content">
         <div class="trend-frame">
           <ul class="main-post-item">
-            <li><a href="#" class="main-menu-link">FOOD</a></li>
+            <li><a href="#" class="main-menu-link"><strong>FOOD</strong></a></li>
           </ul>
           <div class="trend-content-link">
           <a href="#" class="trend-content-link">Сыры на красивых<br>картинках из интернета:<br>какие они на вкус?</a>
@@ -68,8 +101,8 @@
       <div class="trend-content">
         <div class="trend-frame">
         <ul class="main-post-item">
-          <li><a href="#" class="main-menu-link">LIFESTYLE</a></li>
-          <li><a href="#" class="main-menu-link">INTERIOR</a></li>
+          <li><a href="#" class="main-menu-link"><strong>LIFESTYLE</strong></a></li>
+          <li><a href="#" class="main-menu-link"><strong>INTERIOR</strong></a></li>
         </ul>
       <div class="trend-content-link">
         <a href="#" class="trend-content-link">Собираемся в первый<br>поход в горы</a>
@@ -84,8 +117,8 @@
       <div class="trend-content">
         <div class="trend-frame">
         <ul class="main-post-item">
-          <li><a href="#" class="main-menu-link">LIFESTYLE</a></li>
-          <li><a href="#" class="main-menu-link">INTERIOR</a></li>
+          <li><a href="#" class="main-menu-link"><strong>LIFESTYLE</strong></a></li>
+          <li><a href="#" class="main-menu-link"><strong>INTERIOR</strong></a></li>
         </ul>
       <div class="trend-content-link">
         <a href="#" class="trend-content-link">Сейчас в тренде: сколько<br>витамина с в лимонах?</a>
@@ -104,8 +137,8 @@
         <img src="images/last-post1.jpg" class="picture" alt="Человек, море, горы">
         <div class="main-post-item">
           <ul class="main-post-item">
-            <li><a href="#" class="main-menu-link">Travel</a></li>
-            <li><a href="#" class="main-menu-link">Health</a></li>
+            <li><a href="#" class="main-menu-link"><strong>Travel</strong></a></li>
+            <li><a href="#" class="main-menu-link"><strong>Health</strong></a></li>
           </ul>
           <div class="content">
             <div class="content-link">
@@ -124,8 +157,8 @@
         <img src="images/last-post2.jpg" class="picture" alt="Девушка занимается йогой">
         <div class="main-post-item">
           <ul class="main-post-item">
-            <li><a href="#" class="main-menu-link">Health</a></li>
-            <li><a href="#" class="main-menu-link">Life</a></li>
+            <li><a href="#" class="main-menu-link"><strong>Health</strong></a></li>
+            <li><a href="#" class="main-menu-link"><strong>Life</strong></a></li>
           </ul>
           <div class="content">
             <a href="#" class="content-link">Йога для начинающих в домашних условия</a>
@@ -142,7 +175,7 @@
         <img src="images/last-post3.jpg" aline="left" class="picture" alt="Рокер приветствует людей">
         <div class="main-post-item">
           <ul class="main-post-item">
-            <li><a href="#" class="main-menu-link">Music</a></li>
+            <li><a href="#" class="main-menu-link"><strong>Music</strong></a></li>
           </ul>
           <div class="content">
             <a href="#" class="content-link">Лучшие музыкальные фестивали этого лета</a>
@@ -160,8 +193,8 @@
         <img src="images/last-post4.jpg" aline="left" class="picture" alt="Накрытый стол для обеда">
         <div class="main-post-item">
           <ul class="main-post-item">
-            <li><a href="#" class="main-menu-link">LifeStyle</a></li>
-            <li><a href="#" class="main-menu-link">FOOD</a></li>
+            <li><a href="#" class="main-menu-link"><strong>LifeStyle</strong></a></li>
+            <li><a href="#" class="main-menu-link"><strong>FOOD</strong></a></li>
           </ul>
           <div class="content">
             <a href="#" class="content-link">Наукоёмкий подход к кулинарии</a>
@@ -178,9 +211,9 @@
         <img src="images/last-post5.jpg" aline="left" class="picture" alt="Подушка с красивым принтом">
         <div class="main-post-item">
           <ul class="main-post-item">
-            <li><a href="#" class="main-menu-link">LifeStyle</a></li>
-            <li><a href="#" class="main-menu-link">INTERIOR</a></li>
-            <li><a href="#" class="main-menu-link">ART</a></li>
+            <li><a href="#" class="main-menu-link"><strong>LifeStyle</strong></a></li>
+            <li><a href="#" class="main-menu-link"><strong>INTERIOR</strong></a></li>
+            <li><a href="#" class="main-menu-link"><strong>ART</strong></a></li>
           </ul>
           <div class="content">
             <a href="#" class="content-link">Делаем модные принты на подушках для интерьера</a>
@@ -196,7 +229,7 @@
 
     <aside>
       <section class="post-list">
-        <h2>Новые посты</h2>
+        <h2><strong>Новые посты</strong></h2>
         <div class="post-item">
           <img src="images/2.jpg" class="post-img-aside" alt="Человек, море,гора">
           <div class="other-aside">
@@ -307,7 +340,7 @@
             <img src="images/shop-item-desk1.jpg" alt="Подушки на диван">
           </pictury>
           <div class="products-bordered">
-            <h3 class="products-title">Подушки на диван</h3>
+            <h3><a href="#0" class="products-title">Подушки на диван</a></h3>
               <p class="products-description">Набор из двух подушек с модными<br>принтами. Видео о создании <a href="#0">здесь<br></a></p>
                 <div class="price-items">
                   <div class="price">
@@ -329,7 +362,7 @@
             <img src="images/shop-item-desk2.jpg" alt="Кукла">
           </pictury>
           <div class="products-bordered">
-            <h3 class="products-title">Кукла "Зайчик"</h3>
+            <h3><a href="#0" class="products-title">Кукла "Зайчик"</a></h3>
               <p class="products-description">Интерьерная рукодельная кукла<br>«Зайчик», созданию которой посвящена<br><a href="#0">весенняя серия постов</a> в блоге и<br> несколько подкастов.<br></p>
                 <div class="price-items">
                   <div class="price">
@@ -350,7 +383,7 @@
             <img src="images/shop-item-desk3.jpg" alt="Кукла">
           </pictury>
           <div class="products-bordered">
-            <h3 class="products-title">Шестиугольная рамка</h3>
+            <h3><a href="#0" class="products-title">Шестиугольная рамка</a></h3>
               <p class="products-description">Необычная рамка для украшения дома<br>из видео<a href="#0"> «как сделать рамку из<br>подручных средств за 30 минут»<br></a></p>
                 <div class="price-items">
                   <div class="price">
@@ -378,5 +411,6 @@
     </div>
     <div class="copyright">Copyright © 2009–2019 City Blog LLC.</div>
   </footer>
+  
 </body>
 </html>
